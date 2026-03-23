@@ -6,7 +6,7 @@ subtitle: M.S. in Data Science, University of Michigan
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pic.jpg
   image_circular: false
   more_info: >
     <p>Ann Arbor, MI</p>
