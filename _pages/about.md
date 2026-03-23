@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.S. in Data Science, University of Michigan
+subtitle: M.S. in Data Science, University of Michigan, Ann Arbor
 
 profile:
   align: right
@@ -24,12 +24,13 @@ latest_posts:
 
 Hi, I'm GuangChen Li.
 
-I am an M.S. student in Data Science at the University of Michigan. My research interests include LLM agent systems, sequential modeling, temporal point processes, and machine learning under distribution shift.
+I am an M.S. student in Data Science at the University of Michigan, Ann Arbor. My research interests include LLM agent systems, sequential modeling, temporal point processes, and machine learning under distribution shift.
 
 ## Research
 
 - **Graph-aware monitoring and anomaly detection in LLM agent systems**  
-  Research assistant at the University of Michigan, advised by Prof. Raed Al Kontar.
+  Developed a graph-based framework to monitor multi-agent LLM systems and detect anomalies from noisy intermediate signals, using     
+  reinforcement learning and bandit-based methods for adaptive routing.
 
 - **Generative adaptation of temporal point processes**  
   Research on temporal point processes under distribution shift, with a paper currently under submission to KDD 2026.
