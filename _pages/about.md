@@ -29,8 +29,7 @@ I am an M.S. student in Data Science at the University of Michigan, Ann Arbor. M
 ## Research
 
 - **Graph-aware monitoring and anomaly detection in LLM agent systems**  
-  Developed a graph-based framework to monitor multi-agent LLM systems and detect anomalies from noisy intermediate signals, using     
-  reinforcement learning and bandit-based methods for adaptive routing.
+  Developed a graph-based framework to monitor multi-agent LLM systems and detect anomalies from noisy intermediate signals, using reinforcement learning and bandit-based methods for adaptive routing.
 
 - **Generative adaptation of temporal point processes**  
   Research on temporal point processes under distribution shift, with a paper currently under submission to KDD 2026.
