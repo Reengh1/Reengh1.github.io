@@ -16,7 +16,7 @@ cv:
 
   sections:
     Education:
-      - institution: University of Michigan
+      - institution: University of Michigan, Ann Arbor
         location: Ann Arbor, MI
         area: Data Science
         studyType: M.S.
@@ -45,8 +45,11 @@ cv:
           - "GPA: 4.00/4.00"
 
     Experience:
-      - company: University of Michigan
+      - company: University of Michigan, Ann Arbor
         position: Research Assistant
+        highlights:
+          - "Department of Industrial and Operations Engineering"
+          - "Advisor: Prof. Raed Al Kontar"
         start_date: 2025-09
         summary: >
           Working on graph-aware monitoring and anomaly detection in LLM agent systems
@@ -54,6 +57,9 @@ cv:
 
       - company: Renmin University of China
         position: Research Assistant
+        highlights:
+          - "Gaoling School of Artificial Intellgence"
+          - "Advisor: Prof. Hongteng Xu"
         start_date: 2025-10
         end_date: 2026-03
         summary: >
@@ -62,6 +68,9 @@ cv:
 
       - company: Renmin University of China
         position: Research Assistant
+        highlights:
+          - "School of Physics"
+          - "Advisor: Prof. Weimin Wang"
         start_date: 2024-12
         end_date: 2025-04
         summary: >
