@@ -60,7 +60,7 @@ cv:
         start_date: 2025-10
         end_date: 2026-03
         summary: >
-          Research Assistant at the Gaoling School of Artificial Intelligence, advised by Prof. Hongteng Xu.
+          Gaoling School of Artificial Intelligence, advised by Prof. Hongteng Xu.
         highlights:
           - Generative adaptation of temporal point processes under distribution shift
           - Diffusion-based modeling for event sequence generation
