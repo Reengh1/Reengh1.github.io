@@ -44,7 +44,7 @@ cv:
         highlights:
           - "GPA: 4.00/4.00"
 
-    Selected Research Experience:
+    Experience:
       - company: University of Michigan, Ann Arbor
         position: Research Assistant
         start_date: 2025-09
@@ -76,7 +76,7 @@ cv:
           - Neural approximation of the Poisson solver in particle-in-cell (PIC) simulations
           - Deep learning–based acceleration of plasma simulation workflows
           - Validation of physical consistency within a 1D PIC framework
-    Selected Industry Experience:
+          
       - company: Guosen Securities
         position: Research Analyst Intern
         start_date: 2024-10
