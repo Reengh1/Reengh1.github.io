@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "CV",
-          description: "CV of GuangChen Li.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
