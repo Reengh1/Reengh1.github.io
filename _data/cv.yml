@@ -14,34 +14,34 @@ cv:
 
   sections:
 
-    Education:
-      - institution: University of Michigan
-        location: Ann Arbor, MI
-        area: Data Science
-        studyType: M.S.
-        start_date: 2025-08
-        end_date: 2027-05
-        highlights:
-          - GPA: 3.92/4.00
-          - Coursework: Machine Learning, Causal Inference, Optimization, NLP
-
-      - institution: Renmin University of China
-        location: Beijing, China
-        area: Physics
-        studyType: B.S.
-        start_date: 2021-09
-        end_date: 2025-06
-        highlights:
-          - GPA: 3.74/4.00
-          - Coursework: Stochastic Processes, PDE, Linear Algebra, Time Series
-
-      - institution: University of California, Davis
-        location: Davis, CA
-        studyType: Visiting Student
-        start_date: 2024-03
-        end_date: 2024-07
-        highlights:
-          - GPA: 4.00/4.00
+  Education:
+    - institution: University of Michigan
+      location: Ann Arbor, MI
+      area: Data Science
+      studyType: M.S.
+      start_date: 2025-08
+      end_date: 2027-05
+      highlights:
+        - "GPA: 3.92/4.00"
+        - "Coursework: Machine Learning, Causal Inference, Optimization, NLP"
+  
+    - institution: Renmin University of China
+      location: Beijing, China
+      area: Physics
+      studyType: B.S.
+      start_date: 2021-09
+      end_date: 2025-06
+      highlights:
+        - "GPA: 3.74/4.00"
+        - "Coursework: Stochastic Processes, PDE, Linear Algebra, Time Series"
+  
+    - institution: University of California, Davis
+      location: Davis, CA
+      studyType: Visiting Student
+      start_date: 2024-03
+      end_date: 2024-07
+      highlights:
+        - "GPA: 4.00/4.00"
 
     Experience:
       - company: University of Michigan
