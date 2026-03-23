@@ -11,37 +11,38 @@ cv:
   social_networks:
     - network: GitHub
       username: Reengh1
+    - network: LinkedIn
+      username: guangchen-li-830709312
 
   sections:
+    Education:
+      - institution: University of Michigan
+        location: Ann Arbor, MI
+        area: Data Science
+        studyType: M.S.
+        start_date: 2025-08
+        end_date: 2027-05
+        highlights:
+          - "GPA: 3.92/4.00"
+          - "Coursework: Machine Learning, Causal Inference, Optimization, NLP"
 
-  Education:
-    - institution: University of Michigan
-      location: Ann Arbor, MI
-      area: Data Science
-      studyType: M.S.
-      start_date: 2025-08
-      end_date: 2027-05
-      highlights:
-        - "GPA: 3.92/4.00"
-        - "Coursework: Machine Learning, Causal Inference, Optimization, NLP"
-  
-    - institution: Renmin University of China
-      location: Beijing, China
-      area: Physics
-      studyType: B.S.
-      start_date: 2021-09
-      end_date: 2025-06
-      highlights:
-        - "GPA: 3.74/4.00"
-        - "Coursework: Stochastic Processes, PDE, Linear Algebra, Time Series"
-  
-    - institution: University of California, Davis
-      location: Davis, CA
-      studyType: Visiting Student
-      start_date: 2024-03
-      end_date: 2024-07
-      highlights:
-        - "GPA: 4.00/4.00"
+      - institution: Renmin University of China
+        location: Beijing, China
+        area: Physics
+        studyType: B.S.
+        start_date: 2021-09
+        end_date: 2025-06
+        highlights:
+          - "GPA: 3.74/4.00"
+          - "Coursework: Stochastic Processes, PDE, Linear Algebra, Time Series"
+
+      - institution: University of California, Davis
+        location: Davis, CA
+        studyType: Visiting Student
+        start_date: 2024-03
+        end_date: 2024-07
+        highlights:
+          - "GPA: 4.00/4.00"
 
     Experience:
       - company: University of Michigan
@@ -86,16 +87,26 @@ cv:
         authors:
           - GuangChen Li
         publisher: KDD (under submission)
-        releaseDate: 2026
+        releaseDate: "2026"
         summary: >
           Proposed a generative adaptation framework for temporal point processes under distribution shift.
 
     Skills:
       - name: Programming
-        keywords: Python, PyTorch, NumPy, Pandas, C++, R, Git, Linux, LaTeX
+        keywords:
+          - Python
+          - PyTorch
+          - NumPy
+          - Pandas
+          - C++
+          - R
+          - Git
+          - Linux
+          - LaTeX
 
     Languages:
       - name: Mandarin
         summary: Native
       - name: English
         summary: Fluent (TOEFL 102, GRE 326)
+        summary: Native
