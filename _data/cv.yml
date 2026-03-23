@@ -76,7 +76,7 @@ cv:
           - Neural approximation of the Poisson solver in particle-in-cell (PIC) simulations
           - Deep learning–based acceleration of plasma simulation workflows
           - Validation of physical consistency within a 1D PIC framework
-    Selected Research Experience:
+    Selected Industry Experience:
       - company: Guosen Securities
         position: Research Analyst Intern
         start_date: 2024-10
@@ -118,4 +118,3 @@ cv:
         summary: Native
       - name: English
         summary: Fluent (TOEFL 102, GRE 326)
-        summary: Native
