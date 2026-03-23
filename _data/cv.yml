@@ -44,39 +44,39 @@ cv:
         highlights:
           - "GPA: 4.00/4.00"
 
-    Experience:
+    Selected Research Experience:
       - company: University of Michigan, Ann Arbor
         position: Research Assistant
-        highlights:
-          - "Department of Industrial and Operations Engineering"
-          - "Advisor: Prof. Raed Al Kontar"
         start_date: 2025-09
         summary: >
-          Working on graph-aware monitoring and anomaly detection in LLM agent systems
-          under the supervision of Prof. Raed Al Kontar.
+          Department of Industrial and Operations Engineering, advised by Prof. Raed Al Kontar.
+        highlights:
+          - Graph-aware monitoring for LLM-based agent systems
+          - Anomaly detection under noisy intermediate signals
+          - Reinforcement learning and bandit-based routing for adaptive orchestration
 
       - company: Renmin University of China
         position: Research Assistant
-        highlights:
-          - "Gaoling School of Artificial Intellgence"
-          - "Advisor: Prof. Hongteng Xu"
         start_date: 2025-10
         end_date: 2026-03
         summary: >
-          Developed generative adaptation methods for temporal point processes under
-          distribution shift using diffusion models and LoRA.
-
+          Research Assistant at the Gaoling School of Artificial Intelligence, advised by Prof. Hongteng Xu.
+        highlights:
+          - Generative adaptation of temporal point processes under distribution shift
+          - Diffusion-based modeling for event sequence generation
+          - Parameter-efficient fine-tuning with LoRA for cross-domain generalization
+          
       - company: Renmin University of China
         position: Research Assistant
-        highlights:
-          - "School of Physics"
-          - "Advisor: Prof. Weimin Wang"
         start_date: 2024-12
         end_date: 2025-04
         summary: >
-          Applied deep learning to particle-in-cell simulation by replacing the Poisson
-          solver with neural networks.
-
+          School of Physics, advised by Prof. Weimin Wang.
+        highlights:
+          - Neural approximation of the Poisson solver in particle-in-cell (PIC) simulations
+          - Deep learning–based acceleration of plasma simulation workflows
+          - Validation of physical consistency within a 1D PIC framework
+    Selected Research Experience:
       - company: Guosen Securities
         position: Research Analyst Intern
         start_date: 2024-10
