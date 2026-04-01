@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.S. in Data Science, University of Michigan, Ann Arbor
 
 profile:
   align: right
