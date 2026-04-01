@@ -44,4 +44,4 @@ I am an M.S. student in Data Science at the University of Michigan, Ann Arbor. B
 
 ## CV
 
-You can download my CV [here](/assets/pdf/CV_GuangChen_Li.pdf).
+You can download my CV [here](/assets/pdf/cv-guangchen_li.pdf).
