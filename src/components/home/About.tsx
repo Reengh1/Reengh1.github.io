@@ -19,8 +19,8 @@ export default function About({ content, title }: AboutProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
         >
-            <h2 className="text-2xl font-serif font-bold text-primary mb-4">{resolvedTitle}</h2>
-            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed">
+            <h2 className="text-3xl font-serif font-bold text-primary mb-5 tracking-tight">{resolvedTitle}</h2>
+            <div className="text-[1.05rem] text-neutral-700 dark:text-neutral-600 leading-8">
                 <ReactMarkdown
                     components={{
                         h1: ({ children }) => <h1 className="text-3xl font-serif font-bold text-primary mt-8 mb-4">{children}</h1>,
@@ -35,7 +35,7 @@ export default function About({ content, title }: AboutProps) {
                                 {...props}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-accent font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
+                                className="text-accent font-semibold transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
                             />
                         ),
                         blockquote: ({ children }) => (

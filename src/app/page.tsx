@@ -125,6 +125,20 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
       id: 'about',
       sections: processSections(aboutConfig.sections || [], locale),
     }];
+
+    for (const target of localeConfig.features.home_page_sections || []) {
+      const rawConfig = getPageConfig(target, locale);
+      if (!rawConfig) continue;
+
+      const pageConfig = rawConfig as BasePageConfig;
+      if (pageConfig.type === 'card') {
+        pagesToShow.push({
+          type: 'card',
+          id: target,
+          config: pageConfig as CardPageConfig,
+        });
+      }
+    }
   }
 
   return {

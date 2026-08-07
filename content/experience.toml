@@ -1,0 +1,59 @@
+type = "card"
+variant = "experience"
+title = "💼 Experience"
+
+[[items]]
+section = "🔬 Research Experience"
+title = "Graph-Aware Monitoring and Anomaly Detection in LLM Agent Systems"
+subtitle = "Research Assistant · University of Michigan"
+advisor = "Raed Al Kontar"
+advisor_url = "https://ioe.engin.umich.edu/people/al-kontar-raed/"
+date = "2025.09 - Present"
+image = "/umich-logo.webp"
+content = "Developing graph-aware monitoring for LLM-based agentic systems using proxy telemetry and terminal outcomes, including two-channel sequential detectors for early anomaly detection and diagnosis."
+
+[[items]]
+section = "🔬 Research Experience"
+title = "Diffusion Models"
+subtitle = "Research Assistant · University of Michigan"
+advisor = "Qing Qu"
+advisor_url = "https://qingqu.engin.umich.edu/"
+date = "2026.05 - Present"
+image = "/umich-logo.webp"
+content = "Investigating why autoregressive (AR) and random-order generation perform differently across datasets. This ongoing work develops a theoretical explanation and explores VAR-style training to identify generation orders best suited to AR modeling."
+
+[[items]]
+section = "🔬 Research Experience"
+title = "Generative Adaptation of Temporal Point Processes"
+subtitle = "Research Assistant · Renmin University of China"
+advisor = "Hongteng Xu"
+advisor_url = "https://hongtengxu.github.io/"
+date = "2025.10 - 2026.03"
+image = "/ruc-logo.png"
+content = "Proposed GA-TPP for zero-shot adaptation under distribution shift. Conditional diffusion generates context-specific LoRA adapters for a pretrained temporal point process, producing strong out-of-distribution gains on real-world datasets."
+
+[[items]]
+section = "🔬 Research Experience"
+title = "Deep Learning for Particle-in-Cell Simulation"
+subtitle = "Bachelor's Thesis · Renmin University of China"
+advisor = "Weimin Wang"
+advisor_url = "http://www.phys.ruc.edu.cn/info/1399/2443.htm"
+date = "2024.12 - 2025.04"
+image = "/ruc-logo.png"
+content = "Replaced the Poisson solver in a 1D particle-in-cell framework with MLP and CNN-MLP neural field predictors, reaching approximately 10^-3 MSE and reproducing two-stream instability."
+
+[[items]]
+section = "💼 Industry Experience"
+title = "Research Analyst Intern"
+subtitle = "Guosen Securities · Fixed Income Investment Department"
+date = "2024.10 - 2025.01"
+image = "/guosen-logo.png"
+content = "Developed ARIMA/LSTM forecasts and a DQN trading framework with volatility-aware rewards, achieving approximately 5% in-sample and 4% out-of-sample excess returns in the reported experiments."
+
+[[items]]
+section = "💼 Industry Experience"
+title = "Investment Banking Winter Intern"
+subtitle = "Guotai Haitong Securities · Investment Banking Department"
+date = "2023.12 - 2024.02"
+image = "/guotai-haitong-logo.webp"
+content = "Conducted IPO due diligence, analyzed financial and ownership structures, assessed shareholder and competition risks, and contributed to prospectus drafting."

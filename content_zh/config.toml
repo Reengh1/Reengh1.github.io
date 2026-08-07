@@ -1,18 +1,18 @@
 [site]
-title = "刘嘉乐"
-description = "某某大学博士生个人主页。"
-last_updated = "2025年11月18日"
+title = "GuangChen Li 的个人主页"
+description = "GuangChen Li，密歇根大学数据科学硕士生，研究方向为可靠智能体系统与生成式序列建模。"
+last_updated = "2026年8月7日"
 
 [author]
-name = "刘嘉乐"
-title = "博士生"
-institution = "某某大学"
+name = "GuangChen Li"
+title = "数据科学硕士生"
+institution = "密歇根大学"
 
 [social]
-location = "城市，国家"
+location = "美国密歇根州安娜堡"
 location_details = [
-  "理科楼 123 室，",
-  "大学路，城市，国家"
+  "密歇根大学，",
+  "美国密歇根州安娜堡"
 ]
 
 [[navigation]]
@@ -22,31 +22,25 @@ target = "about"
 href = "/"
 
 [[navigation]]
+title = "经历"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
 title = "论文"
 type = "page"
 target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "教学"
+title = "教育"
 type = "page"
-target = "teaching"
-href = "/teaching"
-
-[[navigation]]
-title = "奖项"
-type = "page"
-target = "awards"
-href = "/awards"
-
-[[navigation]]
-title = "服务"
-type = "page"
-target = "services"
-href = "/services"
+target = "education"
+href = "/education"
 
 [[navigation]]
 title = "简历"
-type = "page"
+type = "link"
 target = "cv"
-href = "/cv"
+href = "/cv-guangchen-li.pdf"

@@ -1,5 +1,6 @@
 export interface Author {
   name: string;
+  url?: string;
   isMainAuthor?: boolean;
   affiliation?: string;
   email?: string;

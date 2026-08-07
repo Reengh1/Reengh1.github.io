@@ -47,9 +47,23 @@ export default function SelectedPublications({ publications, title, enableOnePag
                         <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-1">
                             {pub.authors.map((author, idx) => (
                                 <span key={idx}>
-                                    <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
-                                        {author.name}
-                                    </span>
+                                    {author.url ? (
+                                        <a
+                                            href={author.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`${author.isHighlighted ? 'font-semibold text-accent' : 'underline decoration-neutral-300 underline-offset-4 hover:text-accent'} transition-colors`}
+                                        >
+                                            {author.name}
+                                        </a>
+                                    ) : (
+                                        <span className={author.isHighlighted ? 'font-semibold text-accent' : ''}>
+                                            {author.name}
+                                        </span>
+                                    )}
+                                    {author.isCoAuthor && (
+                                        <sup className={author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-500'}>*</sup>
+                                    )}
                                     {author.isCorresponding && (
                                         <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-500'}`}>†</sup>
                                     )}

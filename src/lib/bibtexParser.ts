@@ -45,6 +45,13 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
 
     // Parse authors
     const authors = parseAuthors(tags.author || '', highlightNames);
+    const authorUrls = (tags.authorurls || '')
+      .split(';')
+      .map((url: string) => url.trim())
+      .filter(Boolean);
+    authors.forEach((author, authorIndex) => {
+      author.url = authorUrls[authorIndex];
+    });
 
     // Parse year and month
     const year = parseInt(tags.year) || new Date().getFullYear();
@@ -93,7 +100,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'authorurls']),
     };
 
     // Clean up undefined fields
@@ -164,6 +171,11 @@ function buildNameVariants(name: string): Set<string> {
 
   variants.add(cleaned);
 
+  const withoutParenthetical = cleaned.replace(/\s*\([^)]*\)\s*/g, ' ').trim();
+  if (withoutParenthetical) {
+    variants.add(withoutParenthetical);
+  }
+
   const parts = cleaned.split(/\s+/).filter(Boolean);
   if (parts.length === 2) {
     variants.add(`${parts[1]} ${parts[0]}`);
@@ -172,7 +184,7 @@ function buildNameVariants(name: string): Set<string> {
   return variants;
 }
 
-function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean }> {
+function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ name: string; url?: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean }> {
   if (!authorsStr) return [];
 
   const highlightTextCandidates = new Set<string>();

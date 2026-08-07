@@ -1,0 +1,21 @@
+type = "card"
+variant = "education"
+title = "🎓 教育背景"
+
+[[items]]
+title = "密歇根大学安娜堡分校"
+subtitle = "数据科学硕士"
+date = "2025.08 - 至今"
+image = "/umich-logo.webp"
+
+[[items]]
+title = "中国人民大学"
+subtitle = "物理学学士"
+date = "2021.09 - 2025.06"
+image = "/ruc-logo.png"
+
+[[items]]
+title = "加州大学戴维斯分校"
+subtitle = "访问学生"
+date = "2024.03 - 2024.07"
+image = "/uc-davis-logo.webp"

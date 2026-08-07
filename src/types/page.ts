@@ -15,8 +15,11 @@ export interface TextPageConfig extends BasePageConfig {
 }
 
 export interface CardItem {
+    section?: string;
     title: string;
     subtitle?: string;
+    advisor?: string;
+    advisor_url?: string;
     date?: string;
     content?: string;
     tags?: string[];
@@ -26,5 +29,6 @@ export interface CardItem {
 
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
+    variant?: 'default' | 'education' | 'experience';
     items: CardItem[];
 }

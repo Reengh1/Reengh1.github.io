@@ -3,25 +3,19 @@ title = "Awards"
 description = "Honors and awards I have received."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2025"
-content = "Description of the award."
-
-[[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "Merit Student"
+subtitle = "Renmin University of China"
 date = "2024"
-content = "Description of the award."
+content = "Recognized for academic performance and comprehensive excellence."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "Second Prize, National College Student Mathematics Competition"
+subtitle = "Chinese Mathematical Society"
+date = "2024"
+content = "Awarded second prize in the National College Student Mathematics Competition."
+
+[[items]]
+title = "Second-Class Academic Progress Scholarship"
+subtitle = "Renmin University of China"
 date = "2023"
-content = "Description of the award."
-
-[[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2022"
-content = "Description of the award."
+content = "Awarded for academic progress."

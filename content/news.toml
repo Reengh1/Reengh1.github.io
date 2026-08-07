@@ -1,7 +1,19 @@
 [[news]]
-date = "2025-11"
-content = "Our work has been accepted by a prestigious journal 🎉"
+date = "2026-08"
+content = "Our work on generative adaptation of temporal point processes was submitted to AAAI 2027."
+
+[[news]]
+date = "2026-05"
+content = "I joined Prof. Qing Qu's [DeepThink Lab](https://deepthink-umich.github.io/) at the University of Michigan to work on diffusion models."
 
 [[news]]
 date = "2025-09"
-content = "Starting my PhD at the University of Example"
+content = "I joined Prof. Raed Al Kontar's group as a research assistant, working on reliable LLM agent systems."
+
+[[news]]
+date = "2025-08"
+content = "I started the M.S. in Data Science program at the University of Michigan, Ann Arbor."
+
+[[news]]
+date = "2025-06"
+content = "I graduated from Renmin University of China with a bachelor's degree. 🎓"

@@ -1,5 +1,5 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am an **M.S. student in Data Science** at the **University of Michigan, Ann Arbor**, with expected graduation in May 2027. My research focuses on **temporal point processes (TPPs)**, **agentic AI**, and **diffusion models**. At Michigan, I work with [Prof. Raed Al Kontar](https://ioe.engin.umich.edu/people/al-kontar-raed/) on graph-aware monitoring and anomaly detection for LLM-based agentic systems, and with [Prof. Qing Qu](https://qingqu.engin.umich.edu/) in the [DeepThink Lab](https://deepthink-umich.github.io/) on diffusion models.
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+Previously, I worked remotely with [Prof. Hongteng Xu](https://hongtengxu.github.io/) at the **Gaoling School of Artificial Intelligence, Renmin University of China**, developing generative adaptation methods for TPPs that use conditional diffusion to generate context-specific LoRA adapters under distribution shift. I received my **B.S. in Physics** from **Renmin University of China** in 2025 and was a visiting student at the **University of California, Davis** in 2024.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+**Feel free to contact me if you are interested in related research or potential collaborations.**

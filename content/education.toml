@@ -1,0 +1,21 @@
+type = "card"
+variant = "education"
+title = "🎓 Education"
+
+[[items]]
+title = "University of Michigan, Ann Arbor"
+subtitle = "Department of Statistics · Master's Degree"
+date = "2025.08 - Present"
+image = "/umich-logo.webp"
+
+[[items]]
+title = "Renmin University of China"
+subtitle = "School of Physics · Bachelor's Degree"
+date = "2021.09 - 2025.06"
+image = "/ruc-logo.png"
+
+[[items]]
+title = "University of California, Davis"
+subtitle = "Visiting Student"
+date = "2024.03 - 2024.07"
+image = "/uc-davis-logo.webp"

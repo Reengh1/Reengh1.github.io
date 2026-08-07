@@ -31,6 +31,7 @@ export default function PublicationsList({ config, publications, embedded = fals
     const [showFilters, setShowFilters] = useState(false);
     const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
     const [expandedAbstractId, setExpandedAbstractId] = useState<string | null>(null);
+    const showControls = !embedded || publications.length > 4;
 
     // Extract unique years and types for filters
     const years = useMemo(() => {
@@ -65,8 +66,8 @@ export default function PublicationsList({ config, publications, embedded = fals
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
         >
-            <div className="mb-8">
-                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
+            <div className="mb-6">
+                <h1 className={`${embedded ? "text-3xl" : "text-4xl"} font-serif font-bold text-primary mb-3 tracking-tight`}>{config.title}</h1>
                 {config.description && (
                     <p className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 max-w-2xl`}>
                         {config.description}
@@ -75,7 +76,7 @@ export default function PublicationsList({ config, publications, embedded = fals
             </div>
 
             {/* Search and Filter Controls */}
-            <div className="mb-8 space-y-4">
+            {showControls && <div className="mb-8 space-y-4">
                 {/* ... (keep existing controls) ... */}
                 <div className="flex flex-col sm:flex-row gap-4">
                     <div className="relative flex-grow">
@@ -182,7 +183,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                         </motion.div>
                     )}
                 </AnimatePresence>
-            </div>
+            </div>}
 
             {/* Publications Grid */}
             <div className="space-y-6">
@@ -197,17 +198,17 @@ export default function PublicationsList({ config, publications, embedded = fals
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4, delay: 0.1 * index }}
-                            className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
+                            className="bg-white/80 dark:bg-neutral-900 p-5 sm:p-6 rounded-2xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200"
                         >
                             <div className="flex flex-col md:flex-row gap-6">
                                 {pub.preview && (
-                                    <div className="w-full md:w-48 flex-shrink-0">
-                                        <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+                                    <div className="w-full md:w-64 flex-shrink-0">
+                                        <div className="aspect-video relative rounded-xl overflow-hidden bg-neutral-50 dark:bg-neutral-800 border border-neutral-100 dark:border-neutral-700">
                                             <Image
                                                 src={`/papers/${pub.preview}`}
                                                 alt={pub.title}
                                                 fill
-                                                className="object-cover"
+                                                className="object-contain p-2"
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             />
                                         </div>
@@ -220,9 +221,23 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
                                         {pub.authors.map((author, idx) => (
                                             <span key={idx}>
-                                                <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
-                                                    {author.name}
-                                                </span>
+                                                {author.url ? (
+                                                    <a
+                                                        href={author.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className={`${author.isHighlighted ? 'font-semibold text-accent' : 'underline decoration-neutral-300 underline-offset-4 hover:text-accent'} transition-colors`}
+                                                    >
+                                                        {author.name}
+                                                    </a>
+                                                ) : (
+                                                    <span className={author.isHighlighted ? 'font-semibold text-accent' : ''}>
+                                                        {author.name}
+                                                    </span>
+                                                )}
+                                                {author.isCoAuthor && (
+                                                    <sup className={author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-400'}>*</sup>
+                                                )}
                                                 {author.isCorresponding && (
                                                     <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-400'}`}>†</sup>
                                                 )}

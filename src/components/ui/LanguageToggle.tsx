@@ -41,6 +41,7 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         type="button"
+        aria-label={currentLabel}
         onMouseDown={(e) => e.preventDefault()}
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
@@ -53,8 +54,8 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
         title={currentLabel}
       >
         <LanguageIcon className="h-4 w-4" />
-        <span className="text-xs font-medium">{currentLabel}</span>
-        <ChevronDownIcon className="h-3.5 w-3.5" />
+        <span className="hidden sm:inline text-xs font-medium">{currentLabel}</span>
+        <ChevronDownIcon className="hidden sm:block h-3.5 w-3.5" />
       </motion.button>
 
       {isOpen && (

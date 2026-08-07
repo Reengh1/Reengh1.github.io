@@ -1,4 +1,4 @@
 type = "publication"
-title = "论文"
-description = "我的研究成果列表。"
+title = "📄 论文"
+description = "围绕可泛化事件序列建模与可靠人工智能系统的研究。"
 source = "publications.bib"

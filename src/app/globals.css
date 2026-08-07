@@ -15,16 +15,16 @@
 :root,
 .light {
   /* Light theme colors */
-  --background: #fefffe;
+  --background: #fcfdff;
   --foreground: #0f172a;
   
-  /* Brand colors - Deep Navy & Gold */
+  /* Brand colors - academic navy and clear blue */
   --primary: #1e293b;
   --primary-light: #334155;
   --primary-dark: #0f172a;
-  --accent: #d4a562;
-  --accent-light: #e4b976;
-  --accent-dark: #b8914d;
+  --accent: #2478b8;
+  --accent-light: #3f91cc;
+  --accent-dark: #185f96;
   
   /* Neutral colors */
   --neutral-50: #f8fafc;
@@ -151,9 +151,9 @@ html[data-locale^="zh"] {
   --primary: #f8fafc;
   --primary-light: #e2e8f0;
   --primary-dark: #cbd5e1;
-  --accent: #e4b976;
-  --accent-light: #f0c674;
-  --accent-dark: #d4a562;
+  --accent: #62b5ed;
+  --accent-light: #85c8f4;
+  --accent-dark: #3d94cf;
   
   /* Dark mode glass effect */
   --glass-bg: rgba(15, 23, 42, 0.8);

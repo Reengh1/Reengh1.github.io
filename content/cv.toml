@@ -1,3 +1,4 @@
 type = "text"
 title = "CV"
+description = "A web version of my curriculum vitae. Download the PDF from the navigation bar."
 source = "cv.md"

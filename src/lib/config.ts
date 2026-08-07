@@ -30,6 +30,7 @@ export interface SiteConfig {
   features: {
     enable_likes: boolean;
     enable_one_page_mode?: boolean;
+    home_page_sections?: string[];
   };
   navigation: Array<{
     title: string;

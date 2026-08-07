@@ -114,14 +114,20 @@ export default function Navigation({
   }, [enableOnePageMode, effectiveItems]);
 
   const isDesktopItemActive = (item: SiteConfig['navigation'][number]) =>
-    enableOnePageMode
-      ? activeHash === `#${item.target}` || (!activeHash && item.target === 'about')
-      : (item.href === '/'
-        ? pathname === '/'
-        : pathname.startsWith(item.href));
+    item.type === 'link'
+      ? false
+      : enableOnePageMode
+        ? activeHash === `#${item.target}` || (!activeHash && item.target === 'about')
+        : (item.href === '/'
+          ? pathname === '/'
+          : pathname.startsWith(item.href));
 
   const getDesktopItemHref = (item: SiteConfig['navigation'][number]) =>
-    enableOnePageMode ? `/#${item.target}` : item.href;
+    item.type === 'link'
+      ? item.href
+      : enableOnePageMode
+        ? `/#${item.target}`
+        : item.href;
 
   const activeItem = effectiveItems.find((item) => isDesktopItemActive(item)) ?? null;
   const activeHref = activeItem ? getDesktopItemHref(activeItem) : null;
@@ -172,7 +178,7 @@ export default function Navigation({
                 : 'bg-transparent'
             )}
           >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10">
               <div className="flex justify-between items-center h-16 lg:h-20">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -181,7 +187,7 @@ export default function Navigation({
                 >
                   <Link
                     href="/"
-                    className="text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
+                    className="block max-w-[190px] sm:max-w-none truncate text-lg sm:text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
                   >
                     {effectiveSiteTitle}
                   </Link>
@@ -226,7 +232,7 @@ export default function Navigation({
                             href={href}
                             data-nav-href={href}
                             prefetch={true}
-                            onClick={() => enableOnePageMode && setActiveHash(`#${item.target}`)}
+                            onClick={() => enableOnePageMode && item.type === 'page' && setActiveHash(`#${item.target}`)}
                             onMouseEnter={() => setHoveredHref(href)}
                             className={cn(
                               'relative px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
@@ -247,7 +253,7 @@ export default function Navigation({
                   </div>
                 </div>
 
-                <div className="lg:hidden flex items-center space-x-2">
+                <div className="lg:hidden flex items-center space-x-1.5 flex-shrink-0">
                   <LanguageToggle i18n={i18n} />
                   <ThemeToggle />
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-neutral-600 hover:text-primary hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent transition-colors duration-200">
@@ -280,15 +286,19 @@ export default function Navigation({
                 >
                   <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     {effectiveItems.map((item, index) => {
-                      const isActive = enableOnePageMode
-                        ? (item.href === '/' ? pathname === '/' && !activeHash : activeHash === `#${item.target}`)
-                        : (item.href === '/'
-                          ? pathname === '/'
-                          : pathname.startsWith(item.href));
+                      const isActive = item.type === 'link'
+                        ? false
+                        : enableOnePageMode
+                          ? (item.target === 'about' ? pathname === '/' && !activeHash : activeHash === `#${item.target}`)
+                          : (item.href === '/'
+                            ? pathname === '/'
+                            : pathname.startsWith(item.href));
 
-                      const href = enableOnePageMode
-                        ? (item.href === '/' ? '/' : `/#${item.target}`)
-                        : item.href;
+                      const href = item.type === 'link'
+                        ? item.href
+                        : enableOnePageMode
+                          ? (item.target === 'about' ? '/' : `/#${item.target}`)
+                          : item.href;
 
                       return (
                         <motion.div
@@ -301,7 +311,7 @@ export default function Navigation({
                             as={Link}
                             href={href}
                             prefetch={true}
-                            onClick={() => enableOnePageMode && setActiveHash(item.href === '/' ? '' : `#${item.target}`)}
+                            onClick={() => enableOnePageMode && item.type === 'page' && setActiveHash(item.target === 'about' ? '' : `#${item.target}`)}
                             className={cn(
                               'block px-3 py-2 rounded-md text-base font-medium transition-all duration-200',
                               isActive
