@@ -7,6 +7,10 @@ date = "2026-05"
 content = "I joined Prof. Qing Qu's [DeepThink Lab](https://deepthink-umich.github.io/) at the University of Michigan to work on diffusion models."
 
 [[news]]
+date = "2025-10"
+content = "I began collaborating remotely with [Prof. Hongteng Xu](https://hongtengxu.github.io/) at the Gaoling School of Artificial Intelligence, Renmin University of China, on generative adaptation for temporal point processes."
+
+[[news]]
 date = "2025-09"
 content = "I joined Prof. Raed Al Kontar's group as a research assistant, working on reliable LLM agent systems."
 

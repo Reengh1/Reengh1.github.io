@@ -14,7 +14,7 @@ content = "Developing graph-aware monitoring for LLM-based agentic systems using
 
 [[items]]
 section = "🔬 Research Experience"
-title = "Diffusion Models"
+title = "Understanding Autoregressive and Random-Order Generation"
 subtitle = "Research Assistant · University of Michigan"
 advisor = "Qing Qu"
 advisor_url = "https://qingqu.engin.umich.edu/"
