@@ -7,15 +7,6 @@
     max-width: 42rem;
 }
 
-.travelogue-eyebrow {
-    color: #50746f;
-    font-size: .74rem;
-    font-weight: 700;
-    letter-spacing: .17em;
-    margin-bottom: .7rem;
-    text-transform: uppercase;
-}
-
 .travelogue-header h1 {
     color: #20302f;
     font-size: clamp(2.3rem, 6vw, 3.6rem);

@@ -126,11 +126,11 @@ main .bg-white.rounded-xl {
     clear: both;
     margin-top: 1rem;
     padding: 0.85rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1.5px solid #3d6094;
     border-radius: 0.6rem;
-    color: #fff;
-    background: linear-gradient(110deg, #284f94, #346bb2);
-    box-shadow: 0 4px 14px rgba(40, 79, 148, 0.12);
+    color: #294b7a;
+    background: linear-gradient(110deg, #e9f1ff, #f5f8ff);
+    box-shadow: 0 3px 10px rgba(40, 79, 148, 0.05);
     font-size: 0.95rem;
     line-height: 1.5;
 }
