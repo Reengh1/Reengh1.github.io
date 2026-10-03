@@ -1,0 +1,109 @@
+---
+layout: default
+title: Travelogue
+navbar_title: Travelogue
+permalink: /travel/
+container_class: container-xl
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/travel.css' | relative_url }}">
+
+{% assign travel_photos = site.data.travel.photos %}
+
+<section class="travelogue" aria-labelledby="travelogue-title">
+    <header class="travelogue-header">
+        <p class="travelogue-eyebrow">Beyond the desk</p>
+        <h1 id="travelogue-title">Travelogue<span aria-hidden="true">.</span></h1>
+        <p class="travelogue-intro">Places, moments, and little detours.</p>
+    </header>
+
+    {% if travel_photos.size > 0 %}
+    <div class="travel-grid" aria-label="Travel photographs">
+        {% for photo in travel_photos %}
+        {% assign photo_title = photo.title | default: 'Travel photograph' %}
+        {% assign photo_alt = photo.alt | default: photo_title %}
+        <a class="travel-photo card border-0 shadow-sm"
+           href="{{ photo.image | relative_url }}"
+           data-travel-photo
+           data-title="{{ photo_title | escape }}"
+           data-alt="{{ photo_alt | escape }}"
+           data-location="{{ photo.location | escape }}"
+           data-date="{{ photo.date | escape }}"
+           data-caption="{{ photo.caption | escape }}"
+           aria-label="View photograph: {{ photo_title | escape }}">
+            <div class="travel-photo-frame">
+                <img src="{{ photo.thumbnail | default: photo.image | relative_url }}"
+                     {% if photo.width and photo.height %}width="{{ photo.width }}" height="{{ photo.height }}"{% endif %}
+                     alt="{{ photo_alt | escape }}" loading="lazy" decoding="async">
+                <span class="travel-photo-open" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg>
+                </span>
+            </div>
+            <div class="travel-photo-copy">
+                <h2>{{ photo_title | escape }}</h2>
+                {% if photo.location or photo.date %}
+                <p class="travel-photo-meta">
+                    {% if photo.location %}<span>{{ photo.location | escape }}</span>{% endif %}
+                    {% if photo.date %}<span>{{ photo.date | escape }}</span>{% endif %}
+                </p>
+                {% endif %}
+                {% if photo.caption %}<p class="travel-photo-caption">{{ photo.caption | escape }}</p>{% endif %}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+    <dialog class="travel-lightbox" aria-labelledby="travel-lightbox-title" aria-describedby="travel-lightbox-caption">
+        <div class="travel-lightbox-panel">
+            <div class="travel-lightbox-toolbar">
+                <span class="travel-lightbox-counter" aria-live="polite" aria-atomic="true"></span>
+                <button class="travel-lightbox-close" type="button" aria-label="Close photograph" autofocus>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+                </button>
+            </div>
+            <figure class="travel-lightbox-figure">
+                <div class="travel-lightbox-image-wrap">
+                    <img class="travel-lightbox-image" alt="">
+                    <p class="travel-lightbox-error" role="status" hidden>This photograph could not be loaded.</p>
+                    <button class="travel-lightbox-prev" type="button" aria-label="Previous photograph">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg>
+                    </button>
+                    <button class="travel-lightbox-next" type="button" aria-label="Next photograph">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg>
+                    </button>
+                </div>
+                <figcaption class="travel-lightbox-copy">
+                    <h2 id="travel-lightbox-title"></h2>
+                    <p class="travel-lightbox-meta"></p>
+                    <p id="travel-lightbox-caption"></p>
+                </figcaption>
+            </figure>
+        </div>
+    </dialog>
+    {% else %}
+    <div class="travel-empty card border-0 shadow-sm">
+        <div class="travel-empty-illustration" aria-hidden="true">
+            <svg viewBox="0 0 260 160" fill="none">
+                <path d="M32 123c41 23 154 24 194-8" stroke="currentColor" stroke-opacity=".16" stroke-dasharray="3 6"/>
+                <g transform="rotate(-12 77 77)">
+                    <rect x="32" y="27" width="91" height="111" rx="5" fill="white" stroke="currentColor" stroke-opacity=".18"/>
+                    <rect x="41" y="36" width="73" height="75" rx="2" fill="currentColor" fill-opacity=".07"/>
+                    <circle cx="96" cy="53" r="7" fill="currentColor" fill-opacity=".2"/>
+                    <path d="m41 98 22-30 16 18 12-11 23 23" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5"/>
+                </g>
+                <g transform="rotate(10 176 77)">
+                    <rect x="135" y="21" width="91" height="111" rx="5" fill="white" stroke="currentColor" stroke-opacity=".18"/>
+                    <rect x="144" y="30" width="73" height="75" rx="2" fill="currentColor" fill-opacity=".09"/>
+                    <path d="M144 82c14-9 22-9 37 0s23 9 36 0M144 90c14-9 22-9 37 0s23 9 36 0" stroke="currentColor" stroke-opacity=".28" stroke-width="1.5"/>
+                    <circle cx="185" cy="54" r="11" stroke="currentColor" stroke-opacity=".22" stroke-width="1.5"/>
+                </g>
+                <path d="m122 14 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6ZM234 140l1.5 4.5 4.5 1.5-4.5 1.5-1.5 4.5-1.5-4.5-4.5-1.5 4.5-1.5 1.5-4.5Z" fill="currentColor" fill-opacity=".45"/>
+            </svg>
+        </div>
+        <h2>More journeys, soon.</h2>
+        <p>A few frames from life beyond the desk.<br>Travel photographs will appear here.</p>
+    </div>
+    {% endif %}
+</section>
+
+<script src="{{ '/assets/js/travel.js' | relative_url }}" defer></script>

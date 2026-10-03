@@ -1,4 +1,4 @@
-name: Deploy PRISM to GitHub Pages
+name: Deploy academic homepage to GitHub Pages
 
 on:
   push:
@@ -14,27 +14,35 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: academic-homepage-main
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          node-version: 22
-          cache: npm
+          ruby-version: '3.3'
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: npm install
+        run: bundle install
 
       - name: Build site
-        run: npm run build
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./academic-homepage-main/_site
 
   deploy:
     needs: build

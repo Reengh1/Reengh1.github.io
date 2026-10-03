@@ -1,0 +1,39 @@
+<section class="card education-card border-0 shadow-sm bg-white mt-3" aria-labelledby="education-heading">
+  <div class="card-body p-4">
+    <div class="education-awards-layout {% if site.data.profile.awards.size > 0 %}has-awards{% endif %}">
+      <div>
+        <h2 class="education-section-heading" id="education-heading">Education</h2>
+        <ul class="list-unstyled mb-0 education-list">
+          {% for item in site.data.profile.education %}
+          <li class="education-entry">
+            <div class="education-school-row">
+              {% if item.logo %}<span class="education-logo-frame"><img src="{{ item.logo | relative_url }}" alt="" class="education-logo {% if item.logo_fit == 'cover' %}education-logo-cropped{% endif %}" width="28" height="28" loading="lazy"></span>{% endif %}
+              <h3 class="education-school-name">{{ item.name }}</h3>
+            </div>
+            <div class="education-details {% if item.logo %}has-logo{% endif %}">
+              {% if item.dept %}<div class="education-department">{{ item.dept }}</div>{% endif %}
+              <div class="education-degree-row">
+                <span>{{ item.position }}</span>
+                <span class="education-date">{{ item.date }}</span>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% if site.data.profile.awards.size > 0 %}
+      <section class="awards-column" aria-labelledby="awards-heading">
+        <h2 class="education-section-heading" id="awards-heading">Awards</h2>
+        <ul class="list-unstyled mb-0 awards-list">
+          {% for item in site.data.profile.awards %}
+          <li class="award-entry">
+            <span class="award-name">{{ item.name }}</span>
+            {% if item.date %}<span class="award-date">{{ item.date }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    </div>
+  </div>
+</section>

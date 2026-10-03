@@ -1,0 +1,58 @@
+primary_name: "GuangChen Li"
+secondary_name: "（李光宸）"
+navbar_name: "GuangChen Li"
+
+positions:
+  - name: M.S. Student in Data Science
+  - name: University of Michigan, Ann Arbor
+    logo: /assets/images/badges/umich-seal.svg
+
+email: "gcli@umich.edu"
+github: reengh1
+linkedin: guangchen-li-830709312
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am an <strong>M.S. student in Data Science</strong> at the
+    <strong>University of Michigan, Ann Arbor</strong>, with expected graduation in May 2027.
+    My research focuses on <strong>generative modeling</strong>,
+    <strong>time series</strong>, and <strong>world models</strong>.
+  </p>
+  <p>
+    I received my <strong>B.S. in Physics</strong> from <strong>Renmin University of China</strong>
+    in 2025 and was a visiting student at the <strong>University of California, Davis</strong> in 2024.
+    Feel free to contact me if you are interested in related research or potential collaborations.
+  </p>
+
+phd_search_message: "I am actively seeking Ph.D. opportunities for Fall 2027."
+
+portrait_url: /assets/images/photos/bio.jpg
+
+education:
+  - name: University of Michigan, Ann Arbor
+    logo: /assets/images/badges/umich-seal.svg
+    dept: Department of Statistics
+    position: M.S. in Data Science
+    date: Aug. 2025 - Present
+  - name: Renmin University of China
+    logo: /assets/images/badges/ruc-seal.png
+    logo_fit: cover
+    dept: School of Physics
+    position: B.S. in Physics
+    date: Sep. 2021 - Jun. 2025
+  - name: University of California, Davis
+    logo: /assets/images/badges/uc-davis-seal.png
+    position: Visiting Student
+    date: Mar. 2024 - Jul. 2024
+
+awards:
+  - name: Merit Student
+    institution: Renmin University of China
+    date: "2024"
+  - name: Second Prize, National College Student Mathematics Competition
+    institution: Chinese Mathematical Society
+    date: "2024"
+  - name: Academic Progress Scholarship
+    institution: Renmin University of China
+    date: "2023"
