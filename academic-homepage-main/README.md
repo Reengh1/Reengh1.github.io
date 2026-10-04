@@ -32,7 +32,7 @@ Location notes: the photograph named `北京雍和宫 2.jpg` shows the Hall of P
 
 ## Effects
 
-`assets/css/enhancements.css` and `assets/js/enhancements.js` provide sparse drifting particles, soft blue/lavender background halos, card hover glow, scroll reveals, and a reading progress line. Mobile screens show fewer particles, and particles pause when the page is hidden. Reduced-motion preferences disable the animated particles; content remains visible without JavaScript.
+`assets/css/enhancements.css` and `assets/js/enhancements.js` provide 48 softly drifting and twinkling particles, including small sparkles and glows, soft blue/lavender background halos, card hover glow, scroll reveals, and a reading progress line. Mobile screens show 16 particles, and particles pause when the page is hidden. Reduced-motion preferences disable the animated particles; content remains visible without JavaScript.
 
 ## GitHub Pages
 

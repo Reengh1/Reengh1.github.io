@@ -59,15 +59,37 @@ body::after {
     width: var(--particle-size, 3px);
     height: var(--particle-size, 3px);
     border-radius: 50%;
-    background: rgba(88, 130, 196, 0.36);
-    box-shadow: 0 0 8px 2px rgba(101, 146, 219, 0.1);
-    animation: particle-drift var(--float-duration, 24s) ease-in-out infinite alternate;
-    animation-delay: var(--float-delay, 0s);
+    background: rgba(88, 130, 196, 0.56);
+    box-shadow: 0 0 9px 2px rgba(101, 146, 219, 0.14);
+    animation: particle-drift var(--float-duration, 24s) ease-in-out infinite alternate,
+        particle-twinkle var(--twinkle-duration, 8s) ease-in-out infinite;
+    animation-delay: var(--float-delay, 0s), var(--twinkle-delay, 0s);
 }
 
 .site-ambient-particle:nth-child(3n) {
-    background: rgba(136, 120, 191, 0.3);
-    box-shadow: 0 0 9px 2px rgba(146, 127, 208, 0.1);
+    background: rgba(136, 120, 191, 0.48);
+    box-shadow: 0 0 10px 2px rgba(146, 127, 208, 0.14);
+}
+
+.site-ambient-particle.site-ambient-particle--glow {
+    background: radial-gradient(circle, rgba(105, 148, 217, 0.65), rgba(105, 148, 217, 0.12) 55%, transparent 75%);
+    box-shadow: 0 0 15px 4px rgba(112, 153, 217, 0.13);
+}
+
+.site-ambient-particle--sparkle::before,
+.site-ambient-particle--sparkle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(105, 137, 198, 0.7), transparent);
+    transform: translate(-50%, -50%);
+}
+
+.site-ambient-particle--sparkle::after {
+    transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .site-ambient-particles.is-paused .site-ambient-particle {
@@ -76,13 +98,16 @@ body::after {
 
 @keyframes particle-drift {
     from {
-        opacity: 0.4;
         transform: translate3d(calc(-1 * var(--drift-x)), var(--drift-y), 0);
     }
     to {
-        opacity: 0.9;
         transform: translate3d(var(--drift-x), calc(-1 * var(--drift-y)), 0);
     }
+}
+
+@keyframes particle-twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.85; }
 }
 
 ::selection {
@@ -283,7 +308,7 @@ button:focus-visible {
 }
 
 @media (max-width: 767.98px) {
-    .site-ambient-particle:nth-child(n+9) {
+    .site-ambient-particle:nth-child(n+17) {
         display: none;
     }
 

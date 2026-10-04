@@ -8,21 +8,28 @@
         field.setAttribute("aria-hidden", "true");
         var fragment = document.createDocumentFragment();
 
-        for (var index = 0; index < 18; index++) {
+        for (var index = 0; index < 48; index++) {
             var particle = document.createElement("span");
             particle.className = "site-ambient-particle";
-            // Keep the first eight in the margins; these also form the mobile layer.
-            var inMargin = index < 8;
+            var isGlow = index % 7 === 0;
+            if (isGlow) particle.classList.add("site-ambient-particle--glow");
+            else if (index % 6 === 0) particle.classList.add("site-ambient-particle--sparkle");
+            // The first sixteen stay in the outer gutters and form the mobile layer.
+            // A second gutter layer adds depth without covering the content cards.
+            var inMargin = index < 32;
+            var edge = index < 16 ? 2.5 : 6.5;
             var left = inMargin
-                ? (index % 2 ? 97.5 : 2.5) + (Math.random() - 0.5) * 2
+                ? (index % 2 ? 100 - edge : edge) + (Math.random() - 0.5) * 2
                 : 8 + Math.random() * 84;
             particle.style.left = left + "%";
-            particle.style.top = ((index * 37 + Math.random() * 12) % 100) + "%";
-            particle.style.setProperty("--particle-size", (2 + Math.random() * 1.5).toFixed(1) + "px");
-            particle.style.setProperty("--drift-x", (inMargin ? 5 : 12) + "px");
-            particle.style.setProperty("--drift-y", (12 + Math.random() * 18).toFixed(1) + "px");
-            particle.style.setProperty("--float-duration", (18 + Math.random() * 16).toFixed(1) + "s");
+            particle.style.top = ((index * 19 + Math.random() * 10) % 100) + "%";
+            particle.style.setProperty("--particle-size", (isGlow ? 6 + Math.random() * 3 : 2.4 + Math.random() * 2).toFixed(1) + "px");
+            particle.style.setProperty("--drift-x", (inMargin ? 4 + Math.random() * 4 : 12 + Math.random() * 14).toFixed(1) + "px");
+            particle.style.setProperty("--drift-y", (20 + Math.random() * 30).toFixed(1) + "px");
+            particle.style.setProperty("--float-duration", (16 + Math.random() * 18).toFixed(1) + "s");
             particle.style.setProperty("--float-delay", (-Math.random() * 34).toFixed(1) + "s");
+            particle.style.setProperty("--twinkle-duration", (6 + Math.random() * 6).toFixed(1) + "s");
+            particle.style.setProperty("--twinkle-delay", (-Math.random() * 12).toFixed(1) + "s");
             fragment.appendChild(particle);
         }
 
