@@ -36,6 +36,8 @@ exclude:
   - vendor
   - scripts
   - pic
+  - "44385_Generative_Adaptation_of (1).pdf"
+  - "Raster_vs_Random (4).pdf"
 
 # timezone: Asia/Shanghai
 
