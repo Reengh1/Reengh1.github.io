@@ -1,244 +1,214 @@
 # Photographs from pic/. Original uploads remain unchanged.
-# Web-ready images and thumbnails are in assets/images/travel/.
-# width/height describe the thumbnail and reserve space before lazy loading.
+# The wall and lightbox use byte-for-byte copies in assets/images/travel/originals/.
+# width/height describe the original photo and reserve space before lazy loading.
 photos:
   # Source: 纽约 2026， 250 周年烟火， BROOKLYN BRIDGE PARK.jpg
-  - image: "/assets/images/travel/brooklyn-bridge-fireworks.webp"
-    thumbnail: "/assets/images/travel/thumbs/brooklyn-bridge-fireworks.webp"
-    width: 720
-    height: 405
+  - image: "/assets/images/travel/originals/brooklyn-bridge-fireworks.jpg"
+    width: 3580
+    height: 2014
     title: "250th Anniversary Fireworks"
     location: "Brooklyn Bridge Park · New York, NY"
     alt: "Fireworks lighting up the night sky above the waterfront at Brooklyn Bridge Park."
   # Source: 帝国大厦， 纽约.jpg
-  - image: "/assets/images/travel/empire-state-building.webp"
-    thumbnail: "/assets/images/travel/thumbs/empire-state-building.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/empire-state-building.jpg"
+    width: 2336
+    height: 3504
     title: "Empire State Building"
     location: "New York, NY"
     alt: "The illuminated Empire State Building rising above the New York skyline at night."
   # Source: 时代广场.jpg
-  - image: "/assets/images/travel/times-square.webp"
-    thumbnail: "/assets/images/travel/thumbs/times-square.webp"
-    width: 720
-    height: 405
+  - image: "/assets/images/travel/originals/times-square.jpg"
+    width: 4032
+    height: 2268
     title: "Times Square"
     location: "New York, NY"
     alt: "Crowds beneath illuminated billboards in Times Square at night."
   # Source: NEWYORK HUNTER'S POINT SOUTH PARK.jpg
-  - image: "/assets/images/travel/hunters-point-south.webp"
-    thumbnail: "/assets/images/travel/thumbs/hunters-point-south.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/hunters-point-south.jpg"
+    width: 1440
+    height: 960
     title: "Hunter’s Point South Park"
     location: "New York, NY"
     alt: "The Manhattan skyline across the East River under a soft evening sky."
   # Source: JACKSON PARK, NY.jpg
-  - image: "/assets/images/travel/jackson-park-street.webp"
-    thumbnail: "/assets/images/travel/thumbs/jackson-park-street.webp"
-    width: 720
-    height: 1280
+  - image: "/assets/images/travel/originals/jackson-park-street.jpg"
+    width: 3213
+    height: 5712
     title: "Jackson Park"
     location: "New York, NY"
     alt: "A street framed by tall buildings in New York at dusk."
   # Source: NY, JACKSON PARK.jpg
-  - image: "/assets/images/travel/jackson-park-sunset.webp"
-    thumbnail: "/assets/images/travel/thumbs/jackson-park-sunset.webp"
-    width: 720
-    height: 405
+  - image: "/assets/images/travel/originals/jackson-park-sunset.jpg"
+    width: 4032
+    height: 2268
     title: "Jackson Park at Sunset"
     location: "New York, NY"
     alt: "Sunlight shining between Manhattan skyscrapers below dramatic clouds."
   # Source: NY, WILLIAMSBURG.jpg
-  - image: "/assets/images/travel/williamsburg-skyline.webp"
-    thumbnail: "/assets/images/travel/thumbs/williamsburg-skyline.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/williamsburg-skyline.jpg"
+    width: 1932
+    height: 1288
     title: "Williamsburg"
     location: "Brooklyn · New York, NY"
     alt: "The Manhattan skyline seen across the water from Williamsburg."
   # Source: NY, WILLIAMSBURG_1.jpg
-  - image: "/assets/images/travel/williamsburg-waterfront.webp"
-    thumbnail: "/assets/images/travel/thumbs/williamsburg-waterfront.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/williamsburg-waterfront.jpg"
+    width: 1932
+    height: 1288
     title: "Williamsburg Waterfront"
     location: "Brooklyn · New York, NY"
     alt: "Piers and the Manhattan skyline beneath a clear blue sky."
   # Source: BOSTON CHARLES RIVER WSPLANADE.jpg
-  - image: "/assets/images/travel/charles-river-esplanade.webp"
-    thumbnail: "/assets/images/travel/thumbs/charles-river-esplanade.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/charles-river-esplanade.jpg"
+    width: 1280
+    height: 1920
     title: "Charles River Esplanade"
     location: "Boston, MA"
     alt: "Flowering branches above the Charles River beside a riverside path."
   # Source: BOSTON ISABELLA STEWART GARDNER MUSEUM.jpg
-  - image: "/assets/images/travel/gardner-museum.webp"
-    thumbnail: "/assets/images/travel/thumbs/gardner-museum.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/gardner-museum.jpg"
+    width: 1280
+    height: 1920
     title: "Isabella Stewart Gardner Museum"
     location: "Boston, MA"
     alt: "Flowers and sculptures in the museum’s enclosed garden courtyard."
   # Source: BOSTON CHRISTIAN SCIENCE PLAZA.jpg
-  - image: "/assets/images/travel/christian-science-plaza.webp"
-    thumbnail: "/assets/images/travel/thumbs/christian-science-plaza.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/christian-science-plaza.jpg"
+    width: 1280
+    height: 1920
     title: "Christian Science Plaza"
     location: "Boston, MA"
     alt: "The illuminated domed church at Christian Science Plaza at night."
   # Source: BOSTON SEAPORT2.jpg
-  - image: "/assets/images/travel/boston-seaport-harbor.webp"
-    thumbnail: "/assets/images/travel/thumbs/boston-seaport-harbor.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/boston-seaport-harbor.jpg"
+    width: 1920
+    height: 1280
     title: "Seaport Waterfront"
     location: "Boston, MA"
     alt: "Blue harbor water and waterfront buildings under a clear sky."
   # Source: BOSTON_SEAPORT.jpg
-  - image: "/assets/images/travel/boston-seaport-lights.webp"
-    thumbnail: "/assets/images/travel/thumbs/boston-seaport-lights.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/boston-seaport-lights.jpg"
+    width: 1932
+    height: 1288
     title: "Seaport After Dark"
     location: "Boston, MA"
     alt: "Warm string lights in bare tree branches against a glass building at night."
   # Source: BOSTON_SEAPORT_.jpg
-  - image: "/assets/images/travel/boston-seaport-wall.webp"
-    thumbnail: "/assets/images/travel/thumbs/boston-seaport-wall.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/boston-seaport-wall.jpg"
+    width: 1932
+    height: 1288
     title: "A Corner of Seaport"
     location: "Boston, MA"
     alt: "A colorful wall covered with stickers, photographs, and vinyl records."
   # Source: BOSTON_FENWAY.jpg
-  - image: "/assets/images/travel/boston-fenway.webp"
-    thumbnail: "/assets/images/travel/thumbs/boston-fenway.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/boston-fenway.jpg"
+    width: 1932
+    height: 1288
     title: "Fenway at Night"
     location: "Boston, MA"
     alt: "Boston’s illuminated skyline against a dark night sky."
   # Source: MIT.jpg
-  - image: "/assets/images/travel/mit.webp"
-    thumbnail: "/assets/images/travel/thumbs/mit.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/mit.jpg"
+    width: 1920
+    height: 1280
     title: "Massachusetts Institute of Technology"
     location: "Cambridge, MA"
     alt: "A bright laboratory with glass partitions at MIT."
   # Source: NC, FRED W SYMMES CHAPEL.jpg
-  - image: "/assets/images/travel/pretty-place-chapel.webp"
-    thumbnail: "/assets/images/travel/thumbs/pretty-place-chapel.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/pretty-place-chapel.jpg"
+    width: 1280
+    height: 1920
     title: "Pretty Place Chapel"
     location: "Cleveland, SC"
     alt: "Visitors overlooking the mountains beneath the cross at Pretty Place Chapel."
   # Source: LA, SANTA MONICA BEACH.jpg
-  - image: "/assets/images/travel/santa-monica-beach.webp"
-    thumbnail: "/assets/images/travel/thumbs/santa-monica-beach.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/santa-monica-beach.jpg"
+    width: 1932
+    height: 1288
     title: "Santa Monica Beach"
     location: "Santa Monica, CA"
     alt: "A pink and purple sunset over the Pacific Ocean at Santa Monica Beach."
   # Source: 微信图片_20261003051858.jpg
-  - image: "/assets/images/travel/santa-monica-pier.webp"
-    thumbnail: "/assets/images/travel/thumbs/santa-monica-pier.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/santa-monica-pier.jpg"
+    width: 1280
+    height: 1920
     title: "Santa Monica Pier"
     location: "Santa Monica, CA"
     alt: "Pacific Park’s illuminated Ferris wheel at night on Santa Monica Pier."
   # Source: LA_GETTY CENTER.jpg
-  - image: "/assets/images/travel/getty-center.webp"
-    thumbnail: "/assets/images/travel/thumbs/getty-center.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/getty-center.jpg"
+    width: 1932
+    height: 1288
     title: "The Getty Center"
     location: "Los Angeles, CA"
     alt: "A view over a highway and green hills from the Getty Center."
   # Source: LOWER ANTELOPE CANYON.jpg
-  - image: "/assets/images/travel/lower-antelope-canyon-sky.webp"
-    thumbnail: "/assets/images/travel/thumbs/lower-antelope-canyon-sky.webp"
-    width: 720
-    height: 960
+  - image: "/assets/images/travel/originals/lower-antelope-canyon-sky.jpg"
+    width: 960
+    height: 1280
     title: "Lower Antelope Canyon"
     location: "Arizona, USA"
     alt: "Blue sky framed by the flowing orange sandstone walls of Lower Antelope Canyon."
   # Source: LOWER ANTELOPE CANYON_.jpg
-  - image: "/assets/images/travel/lower-antelope-canyon-light.webp"
-    thumbnail: "/assets/images/travel/thumbs/lower-antelope-canyon-light.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/lower-antelope-canyon-light.jpg"
+    width: 1280
+    height: 1920
     title: "Sandstone and Light"
     location: "Lower Antelope Canyon · Arizona, USA"
     alt: "Sunlight on the curved red sandstone walls inside Lower Antelope Canyon."
   # Source: VANCOUVER.jpg
-  - image: "/assets/images/travel/vancouver.webp"
-    thumbnail: "/assets/images/travel/thumbs/vancouver.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/vancouver.jpg"
+    width: 1440
+    height: 960
     title: "Autumn in Vancouver"
     location: "Vancouver, Canada"
     alt: "Red and yellow autumn trees beside a quiet street in Vancouver."
   # Source: 北京雍和宫 2.jpg
-  - image: "/assets/images/travel/temple-of-heaven.webp"
-    thumbnail: "/assets/images/travel/thumbs/temple-of-heaven.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/temple-of-heaven.jpg"
+    width: 1280
+    height: 1920
     title: "Hall of Prayer for Good Harvests"
     location: "Temple of Heaven · Beijing, China"
     alt: "The Hall of Prayer for Good Harvests at the Temple of Heaven beneath a clear blue sky."
   # Source: 北京雍和宫.jpg
-  - image: "/assets/images/travel/yonghe-temple.webp"
-    thumbnail: "/assets/images/travel/thumbs/yonghe-temple.webp"
-    width: 720
-    height: 405
+  - image: "/assets/images/travel/originals/yonghe-temple.jpg"
+    width: 2276
+    height: 1280
     title: "Yonghe Temple"
     location: "Beijing, China"
     alt: "Incense smoke drifting in front of a tiled temple roof at Yonghe Temple."
   # Source: 北京三里屯.jpg
-  - image: "/assets/images/travel/sanlitun.webp"
-    thumbnail: "/assets/images/travel/thumbs/sanlitun.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/sanlitun.jpg"
+    width: 1280
+    height: 1920
     title: "Sanlitun"
     location: "Beijing, China"
     alt: "A festive tree sculpture in front of a modern building in Sanlitun."
   # Source: JAPAN KUROSAWA OCEON.jpg
-  - image: "/assets/images/travel/japan-forest-steps.webp"
-    thumbnail: "/assets/images/travel/thumbs/japan-forest-steps.webp"
-    width: 720
-    height: 1081
+  - image: "/assets/images/travel/originals/japan-forest-steps.jpg"
+    width: 870
+    height: 1306
     title: "Forest Steps"
     location: "Kurosawa Onsen, Japan"
     alt: "Wooden steps leading through a lush green forest in Japan."
   # Source: JAPAN KUROSAWA OCEON2.jpg
-  - image: "/assets/images/travel/japan-waterfall.webp"
-    thumbnail: "/assets/images/travel/thumbs/japan-waterfall.webp"
-    width: 720
-    height: 1080
+  - image: "/assets/images/travel/originals/japan-waterfall.jpg"
+    width: 1160
+    height: 1740
     title: "Behind the Waterfall"
     location: "Kurosawa Onsen, Japan"
     alt: "A waterfall flowing behind a twisting tree trunk in Japan."
   # Source: JAPAN KUROSAWA OCEON3.jpg
-  - image: "/assets/images/travel/japan-forest-stream.webp"
-    thumbnail: "/assets/images/travel/thumbs/japan-forest-stream.webp"
-    width: 720
-    height: 480
+  - image: "/assets/images/travel/originals/japan-forest-stream.jpg"
+    width: 1740
+    height: 1160
     title: "A Forest Stream"
     location: "Kurosawa Onsen, Japan"
     alt: "A clear stream flowing over dark rocks in Japan."
   # Source: JAPAN KUROSAWA OCEON4.jpg
-  - image: "/assets/images/travel/japan-stones.webp"
-    thumbnail: "/assets/images/travel/thumbs/japan-stones.webp"
-    width: 720
-    height: 1081
+  - image: "/assets/images/travel/originals/japan-stones.jpg"
+    width: 870
+    height: 1306
     title: "Quiet Stones"
     location: "Kurosawa Onsen, Japan"
     alt: "A small stack of stones against a mossy forest backdrop in Japan."

@@ -23,8 +23,8 @@ Then open http://127.0.0.1:4000/. The old Next.js site remains in the parent fol
 ## Add travel photos
 
 1. Keep original uploads in `pic/`. This source folder is excluded from the built site.
-2. Put web-ready photos in `assets/images/travel/`, with smaller previews in its `thumbs/` subfolder. The current gallery uses WebP images without changing the originals.
-3. Add an entry to `_data/travel.yml` with `image`, `thumbnail`, title, location, and a short image description (`alt`). Set `width` and `height` to the thumbnail dimensions to reserve space before it loads. Dates and captions are optional; source filenames are preserved in comments.
+2. Copy each original photo unchanged into `assets/images/travel/originals/` with a descriptive filename. Both the photo wall and the larger viewer use these original files, retaining every pixel, color profile, and metadata without resizing or recompression. Photos are lazy-loaded as visitors scroll.
+3. Add an entry to `_data/travel.yml` with `image`, title, location, and a short image description (`alt`). Set `width` and `height` to the original photo's displayed dimensions to reserve space before it loads. Dates and captions are optional; source filenames are preserved in comments.
 
 Travelogue displays a responsive photo wall at the photos’ natural proportions. Clicking a photo opens a larger viewer; use the arrow keys to browse and Escape to close.
 

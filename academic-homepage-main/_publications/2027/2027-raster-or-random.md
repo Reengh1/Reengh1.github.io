@@ -3,8 +3,7 @@ title: "Raster or Random? Let the Data Decide"
 # The source specifies the venue year only; this date is used for year grouping.
 date: 2027-01-01 00:00:00 -0500
 selected: true
-pub: "Submitted to ICLR"
-pub_date: "2027"
+pub: "Under review"
 abstract: >-
   The best generation order depends on the data’s dependency structure:
   autoregressive order performs better on language and ordinary LDS, while random

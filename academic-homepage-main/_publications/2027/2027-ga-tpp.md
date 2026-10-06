@@ -3,8 +3,7 @@ title: "Generative Adaptation of Temporal Point Processes for Generalizable Even
 # The source specifies the venue year only; this date is used for year grouping.
 date: 2027-01-01 00:00:00 -0500
 selected: true
-pub: "Submitted to AAAI"
-pub_date: "2027"
+pub: "Under review"
 abstract: >-
   GA-TPP generates condition-specific LoRA adapters with conditional diffusion,
   enabling pretrained temporal point processes to adapt to unseen sequence contexts

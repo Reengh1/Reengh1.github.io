@@ -31,7 +31,7 @@ container_class: container-xl
            data-caption="{{ photo.caption | escape }}"
            aria-label="View photograph: {{ photo_title | escape }}">
             <div class="travel-photo-frame">
-                <img src="{{ photo.thumbnail | default: photo.image | relative_url }}"
+                <img src="{{ photo.image | relative_url }}"
                      {% if photo.width and photo.height %}width="{{ photo.width }}" height="{{ photo.height }}"{% endif %}
                      alt="{{ photo_alt | escape }}" loading="lazy" decoding="async">
                 <span class="travel-photo-open" aria-hidden="true">
