@@ -29,7 +29,7 @@ short_bio: >-
     My research focuses on <strong>generative and sequence modeling</strong>, guided by a central question:
     <strong>how do the dependencies and dynamics of data shape the way models learn, generate, and adapt?</strong>
     By understanding these relationships, I aim to characterize models’ capabilities and limitations
-    and develop more effective methods for generation and adaptation.
+    and use these insights to develop <strong>more generalizable and efficient models</strong>.
     My past work has focused on <strong>conditional adaptation of sequence models</strong> and
     <strong>the relationship between data dependencies and training and generation order</strong>,
     combining method development, controlled experiments, and theoretical analysis.
