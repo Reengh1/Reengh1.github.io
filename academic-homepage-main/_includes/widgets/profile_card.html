@@ -20,7 +20,10 @@
 
                         <div class="d-flex">
                             <h1 class="h1 font-weight-normal">
-                                {{ site.data.profile.primary_name }} <small class="profile-name-cn" lang="zh-CN">{{ site.data.profile.secondary_name }}</small>
+                                {{ site.data.profile.primary_name }}
+                                {% if site.data.profile.secondary_name and site.data.profile.secondary_name != "" %}
+                                <small class="profile-name-cn" lang="zh-CN">{{ site.data.profile.secondary_name }}</small>
+                                {% endif %}
                             </h1>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">

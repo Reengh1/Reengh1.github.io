@@ -1,5 +1,5 @@
 primary_name: "GuangChen Li"
-secondary_name: "（李光宸）"
+secondary_name: ""
 navbar_name: "GuangChen Li"
 
 positions:
@@ -14,15 +14,27 @@ linkedin: guangchen-li-830709312
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an <strong>M.S. student in Data Science</strong> at the
-    <strong>University of Michigan, Ann Arbor</strong>, with expected graduation in May 2027.
-    My research focuses on <strong>generative modeling</strong>,
-    <strong>time series</strong>, and <strong>world models</strong>.
+    I am <strong>Guangchen Li<span class="profile-name-cn" lang="zh-CN">（李光宸）</span></strong>, a second-year
+    <strong>M.S. student in Data Science</strong> at the <strong>University of Michigan, Ann Arbor</strong>,
+    advised by <strong><a href="https://qingqu.engin.umich.edu/" target="_blank" rel="noopener">Prof. Qing Qu</a></strong>. I expect to graduate in May 2027.
   </p>
   <p>
-    I received my <strong>B.S. in Physics</strong> from <strong>Renmin University of China</strong>
+    Before joining Michigan, I received my <strong>B.S. in Physics</strong> from <strong>Renmin University of China</strong>
     in 2025 and was a visiting student at the <strong>University of California, Davis</strong> in 2024.
-    Feel free to contact me if you are interested in related research or potential collaborations.
+    Over the past year, I have also had the pleasure of working with
+    <strong><a href="https://hongtengxu.github.io/" target="_blank" rel="noopener">Prof. Hongteng Xu</a></strong>
+    and <strong><a href="https://alkontar.engin.umich.edu/" target="_blank" rel="noopener">Prof. Raed Al Kontar</a></strong>.
+  </p>
+  <p>
+    My research interests center on <strong>generative and sequence modeling</strong>, guided by a central question:
+    <strong>how should the dependencies and dynamics of data shape the way models learn, generate, and adapt?</strong>
+    My past work has focused on <strong>conditional adaptation of sequence models</strong> and
+    <strong>the relationship between data dependencies and generation order</strong>.
+  </p>
+  <p>
+    Recently, I have started exploring the <strong>foundations of in-context learning in world models</strong>,
+    focusing on generalization and its limits in changing environments.
+    Feel free to reach out for discussions or potential collaborations on related topics.
   </p>
 
 phd_search_message: "I am actively seeking Ph.D. opportunities for Fall 2027."
