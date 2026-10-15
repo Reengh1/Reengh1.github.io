@@ -26,10 +26,13 @@ short_bio: >-
     and <strong><a href="https://alkontar.engin.umich.edu/" target="_blank" rel="noopener">Prof. Raed Al Kontar</a></strong>.
   </p>
   <p>
-    My research interests center on <strong>generative and sequence modeling</strong>, guided by a central question:
-    <strong>how should the dependencies and dynamics of data shape the way models learn, generate, and adapt?</strong>
+    My research focuses on <strong>generative and sequence modeling</strong>, guided by a central question:
+    <strong>how do the dependencies and dynamics of data shape the way models learn, generate, and adapt?</strong>
+    By understanding these relationships, I aim to characterize models’ capabilities and limitations
+    and develop more effective methods for generation and adaptation.
     My past work has focused on <strong>conditional adaptation of sequence models</strong> and
-    <strong>the relationship between data dependencies and generation order</strong>.
+    <strong>the relationship between data dependencies and training and generation order</strong>,
+    combining method development, controlled experiments, and theoretical analysis.
   </p>
   <p>
     Recently, I have started exploring the <strong>foundations of in-context learning in world models</strong>,
