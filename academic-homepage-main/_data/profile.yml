@@ -47,13 +47,11 @@ portrait_url: /assets/images/photos/bio.jpg
 education:
   - name: University of Michigan, Ann Arbor
     logo: /assets/images/badges/umich-seal.svg
-    dept: Department of Statistics
     position: M.S. in Data Science
     date: Aug. 2025 - Present
   - name: Renmin University of China
     logo: /assets/images/badges/ruc-seal.png
     logo_fit: cover
-    dept: School of Physics
     position: B.S. in Physics
     date: Sep. 2021 - Jun. 2025
   - name: University of California, Davis
